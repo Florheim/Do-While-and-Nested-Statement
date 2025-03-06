@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number = 0;
+    // Promt the user to input number from 0 to number want you to end.
+    // from 0 - 20
+    // after input 1 and 20 put now any negative number to stop counting
+        do {
+            number = parseInt(prompt("Please enter a positive number (or a negative number to exit):"));
+            if (number >= 0) {
+                let count = 1;
+                while (count <= number) {
+                    console.log(`Count: ${count}`);
+                    count++;
+                }
+            }
+        } while (number >= 0);
+    </script>
+</body>
+</html>
